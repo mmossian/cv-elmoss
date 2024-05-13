@@ -25,3 +25,5 @@ pnpm-debug.log*
 .idea/
 
 TODO
+svelte.config.json
+tsconfig.json
