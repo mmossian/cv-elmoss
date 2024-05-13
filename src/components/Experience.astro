@@ -3,6 +3,7 @@ import Title from "./Title.astro";
 import Skills from "./Skills.astro";
 import { experience } from "../resume.json";
 const { locale } = Astro.props;
+const lang = locale === "en" ? locale : "";
 const maxDescriptionLength = 100;
 ---
 
@@ -30,7 +31,7 @@ const maxDescriptionLength = 100;
 
                 <p class="my-5 text-xs text-white font-semibold no-print">
                     {(project.screenshots === true) ? (
-                        <a class="p-2 bg-neutral-500 rounded-md" href=`${locale}/projects/${project.id}`>
+                        <a class="p-2 bg-neutral-500 rounded-md" href=`${lang}/projects/${project.id}`>
                             Screenshots
                         </a>
                    ) : ""}
