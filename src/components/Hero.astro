@@ -1,0 +1,60 @@
+---
+interface Props {
+    locale: string;
+}
+
+import { basics } from "../resume.json";
+import LinkedIn from "../components/icons/Linkedin.astro";
+import Email from "../components/icons/Email.astro";
+import Github from "../components/icons/Github.astro";
+const { locale } = Astro.props;
+---
+
+<h1 class="text-2xl font-semibold mt-5 ml-3">
+    {basics[locale].name}
+</h1>
+<section class="p-2 flex flex-wrap md:flex-nowrap">
+    <div class="md:flex-grow text-sm">
+        <p class="leading-6 p-2">
+            &bull; {basics[locale].label}
+        </p>
+        <p class="leading-6 p-2 flex flex-nowrap">
+            <a
+                class="underline"
+                href="https://www.google.com/maps/place/Montevideo,+Departamento+de+Montevideo/@-34.8342805,-56.279872,12z/data=!3m1!4b1!4m6!3m5!1s0x959f80ffc63bf7d3:0x6b321b2e355bec99!8m2!3d-34.9055016!4d-56.1851147!16zL20vMDlqcDM?entry=ttu"
+                target="_blank"
+            >
+                {basics[locale].location.city}, {
+                    basics[locale].location.country
+                }
+            </a>
+        </p>
+
+        <p class="leading-6 flex flex-nowrap no-print">
+            <Email locale={locale} />
+            <LinkedIn locale={locale} />
+            <Github locale={locale} />
+        </p>
+
+        <div class="leading-6 p-2 flex flex-nowrap print">
+            <p>&bull; Email: {basics[locale].email}</p>
+            <p>
+                &bull; {basics[locale].profiles[0].network}: {
+                    basics[locale].profiles[0].url
+                }
+            </p>
+            <p>
+                &bull; {basics[locale].profiles[1].network}: {
+                    basics[locale].profiles[1].url
+                }
+            </p>
+        </div>
+    </div>
+    <div class="px-2 flex-shrink-0 flex flex-col w-32 h-32">
+        <img
+            src={basics[locale].image}
+            class="rounded-lg mx-auto"
+            alt={basics[locale].name}
+        />
+    </div>
+</section>

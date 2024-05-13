@@ -1,0 +1,45 @@
+---
+interface Props {
+    locale: string;
+}
+import Title from "./Title.astro";
+import Skills from "./Skills.astro";
+import { experience } from "../resume.json";
+const { locale } = Astro.props;
+const maxDescriptionLength = 100;
+---
+
+<Title title={experience[locale].title} />
+
+<Skills />
+
+<section class="p-2 grid md:grid-cols-3 gap-5">
+    {
+        experience[locale].projects.map((project) => (
+            <div class="w-full p-3 hover:shadow-lg rounded-xl">
+                <p class="mb-3 opacity-90 text-lg font-semibold underline">
+                    {
+                        project.url != ""
+                        ? <a href={project.url} class="m-2" target="_blank">{project.name}</a>
+                        : project.name
+                    }
+                </p>
+                {
+                    project.description.length > maxDescriptionLength
+                    ? <p class="text-xs cursor-pointer no-print" title={project.description}>{project.description.substr(0, maxDescriptionLength) + " ..."}</p>
+                    : <p class="text-xs no-print">{project.description}</p>
+                }
+                <p class="text-xs print">{project.description}</p>
+
+                <p class="my-5 text-xs text-white font-semibold no-print">
+                    {(project.screenshots === true) ? (
+                        <a class="p-2 bg-neutral-500 rounded-md" href=`${locale}/projects/${project.id}`>
+                            Screenshots
+                        </a>
+                   ) : ""}
+                </p>
+                <p class="my-5 text-xs text-white font-semibold print">{ project.url != "" ? project.url : "" }</p>
+            </div>
+        ))
+    }
+</section>

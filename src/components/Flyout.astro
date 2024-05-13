@@ -1,0 +1,45 @@
+---
+interface Props {
+	images: [];
+	title: string;
+}
+import Slider from "./Slider.astro";
+const { images, title } = Astro.props;
+console.log(images, title);
+---
+
+<div class="hidden bg-white fixed inset-0 z-[100] overflow-y-auto flyout">
+	<div class="grid grid-cols-2 bg-gray-100 p-6">
+		<div class="text-2xl text-gray-600 title">Screenshots</div>
+		<div
+			class="absolute top-4 right-5 text-2xl cursor-pointer btn-close-flyout"
+		>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke-width="1"
+				stroke="currentColor"
+				class="w-10 h-10"
+				><path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+				></path></svg
+			>
+		</div>
+	</div>
+	<div class="relative block mt-5 overflow-y-scroll content">
+		<Slider images={images} title={title} client:visible />
+	</div>
+	<div
+		class="absolute bg-gray-100 left-0 right-0 bottom-0 h-auto p-3 mt-3 actions"
+	>
+		<button
+			type="button"
+			class="bg-gray-500 text-white font-bold p-3 mx-2 float-right rounded-md btn-close-flyout"
+			>Cerrar</button
+		>
+	</div>
+	<!-- Your HTML here -->
+</div>

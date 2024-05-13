@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slider {
+	@apply grid;
+	grid-template-areas: "slide";
+	width: 100%;
+}
+
+.slider-childs {
+	@apply before:absolute before:inset-0 before:bg-transparent;
+	grid-area: slide;
+	transition: 0.01s clip-path 0.6s;
+	clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+}
+
+[data-active] {
+	order: 1;
+	transition: 0.6s clip-path;
+	clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.slider-prev {
+	grid-area: slide;
+	@apply z-[100] self-center justify-self-start;
+}
+
+.slider-next {
+	grid-area: slide;
+	@apply z-[100] self-center justify-self-end;
+}

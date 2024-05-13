@@ -1,0 +1,33 @@
+---
+export function getStaticPaths() {
+	return [
+		{ params: { project: "angelina" } },
+		{ params: { project: "castrol" } },
+		{ params: { project: "konigpromos" } },
+	];
+}
+const { project } = Astro.params;
+
+import { experience } from "../../../resume.json";
+import Layout from "../../../layouts/Layout.astro";
+import Header from "../../../components/Header.astro";
+import Divider from "../../../components/Divider.astro";
+import Slider from "../../../components/Slider.astro";
+const { currentLocale } = Astro;
+const activeProject = experience[currentLocale].projects.filter((p) => {
+	if (p.id === project) {
+		return p;
+	}
+});
+---
+
+<Layout title="Portfolio Marcelo Mossian">
+	<main
+		class="h-screen md:w-[80%] lg:w-[65%] xl:w-[50%] mx-auto mb-10 mt-2 p-5"
+	>
+		<Header locale={currentLocale} />
+		<Divider />
+		<h1 class="text-3xl ml-5">Project {activeProject[0].name}</h1>
+		<Slider images={activeProject[0].images} />
+	</main>
+</Layout>

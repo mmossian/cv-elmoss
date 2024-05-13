@@ -1,0 +1,259 @@
+{
+	"skills": [
+		"PHP/CodeIgniter4/Laravel",
+		"MySql/PostgreSql/MongoDb",
+		"Javascript/jQuery",
+		"NodeJs/Express/React/Svelte",
+		"Semantic UI/Bootstrap/Tailwindcss"
+	],
+	"basics": {
+		"es": {
+			"label": "Desarrollador full stack con más de 10 años de experiencia, particularmente enfocado en backend.",
+			"name": "Marcelo Mossian",
+			"image": "/yo.jpeg",
+			"email": "mmossian@gmail.com",
+			"phone": "",
+			"url": "https://midu.dev",
+			"location": {
+				"address": "",
+				"postalCode": "",
+				"city": "Montevideo",
+				"countryCode": "UY",
+				"country": "Uruguay"
+			},
+			"profiles": [
+				{
+					"network": "LinkedIn",
+					"username": "marcelo-mossian",
+					"url": "https://www.linkedin.com/in/marcelo-mossian-5b721524/"
+				},
+				{
+					"network": "GitHub",
+					"username": "mmossian",
+					"url": "https://github.com/mmossian"
+				}
+			]
+		},
+		"en": {
+			"name": "Marcelo Mossian",
+			"label": "Full Stack Developer with more than 10 years experience",
+			"image": "/yo.jpeg",
+			"email": "mmossian@gmail.com",
+			"phone": "",
+			"url": "https://midu.dev",
+			"location": {
+				"address": "",
+				"postalCode": "",
+				"city": "Montevideo",
+				"countryCode": "UY",
+				"country": "Uruguay"
+			},
+			"profiles": [
+				{
+					"network": "LinkedIn",
+					"username": "marcelo-mossian",
+					"url": "https://www.linkedin.com/in/marcelo-mossian-5b721524/"
+				},
+				{
+					"network": "GitHub",
+					"username": "mmossian",
+					"url": "https://github.com/mmossian"
+				}
+			]
+		}
+	},
+	"about": {
+		"es": {
+			"title": "Sobre mí",
+			"summary": "+10 años de experiencia como Desarrollador Web freelancer. Programador full stack particularmente enfocado en desarrollo de backend con PHP (CodeIgniter, Laravel) y frontend (jQuery, Svelte y React, Bootstrap, Semantic UI, Tailwindcss)."
+		},
+		"en": {
+			"title": "About me",
+			"summary": "+10 years of experience as freelancer web developer. Full stack programmer particularly in backend development with PHP (CodeIgniter, Laravel) y frontend (jQuery, Svelte y React, Bootstrap, Semantic UI, Tailwindcss)."
+		}
+	},
+	"experience": {
+		"es": {
+			"title": "Trabajos realizados",
+			"projects": [
+				{
+					"id": "fitness",
+					"date": "2018",
+					"name": "Fitness",
+					"description": "Aplicación web para empresa tercerizada generadora de contenidos para Movistar. Contiene backend con CMS personalizado para gestión de contenido y configuración de juego.",
+					"url": "https://mobilecontenido.com/fitness/",
+					"screenshots": false
+				},
+				{
+					"id": "dogs",
+					"date": "2018",
+					"name": "Perritos Amigos",
+					"description": "Aplicación web para empresa tercerizada generadora de contenidos para Movistar. Contiene backend con CMS personalizado para gestión de contenido y configuración de juego.",
+					"url": "http://mobilecontenido.com/dog/",
+					"screenshots": false
+				},
+				{
+					"id": "pxpeu",
+					"date": "2018",
+					"name": "Pxp Euskadi",
+					"description": "Aplicación web frontend para el departamento de seguridad vial del Gobierno Vasco.",
+					"url": "https://www.pxpeuskadi.eus/site/",
+					"screenshots": false
+				},
+				{
+					"id": "bda",
+					"date": "2022",
+					"name": "Bien de Acá",
+					"description": "Aplicación web desarrollada para la UDELAR (Universidad de la República), promoviendo la defensa del patrimonio uruguayo. Contiene una interface de usuario donde un usuario registrado puede agregar registros, imagenes, audio y videos y otra de administrador.",
+					"url": "https://biendeaca.com.uy/",
+					"screenshots": false
+				},
+				{
+					"id": "angelina",
+					"date": "2021",
+					"name": "Angelina",
+					"description": "Aplicación web backend de sorteo de 1 auto 0 km para empresa del rubro alimentario.",
+					"url": "",
+					"screenshots": true,
+					"images": [
+						"/public/screenshots/angelina/0-acceso-admin.png",
+						"/public/screenshots/angelina/0-home.png",
+						"/public/screenshots/angelina/1-home-admin.png",
+						"/public/screenshots/angelina/1-registro-usuario.png",
+						"/public/screenshots/angelina/2-codesxuser-admin.png",
+						"/public/screenshots/angelina/2-email-validacion.png",
+						"/public/screenshots/angelina/3-home-usuario.png",
+						"/public/screenshots/angelina/3-reportes-admin.png",
+						"/public/screenshots/angelina/4-perfil-usuario.png"
+					]
+				},
+				{
+					"id": "torrevieja",
+					"date": "2021",
+					"name": "Sal Torrevieja",
+					"description": "Desarrollo de frontend y backend para empresa local productora de sales industriales. Incluye backend con CMS personalizado que permite subir, eliminar imagenes, asi como agregar, editar y eliminar productos.",
+					"url": "https://www.torrevieja.com.uy/",
+					"screenshots": false
+				},
+				{
+					"id": "konigpromos",
+					"date": "2022",
+					"name": "Konig Promos",
+					"description": "Aplicación web backend para laboratorio veterinario. Promoción para clientes. La empresa sortea regalos para sus clientes en función de las ventas del mismo.",
+					"url": "",
+					"screenshots": true,
+					"images": [
+						"/public/screenshots/konigpromos/0-dashboard-admin.png",
+						"/public/screenshots/konigpromos/1-ventas-admin.png"
+					]
+				},
+				{
+					"id": "castrol",
+					"date": "2023",
+					"name": "Castrol",
+					"description": "Aplicación web backend para gestionar sorteo de productos Castrol en estaciones de servicio de todo el país.",
+					"url": "https://newscastrol.com/castrolaxion/",
+					"screenshots": true,
+					"images": [
+						"/public/screenshots/castrol/0-admin-home.png",
+						"/public/screenshots/castrol/1-admin-sorteos-list.png",
+						"/public/screenshots/castrol/2-admin-sorteos-fin.png"
+					]
+				}
+			]
+		},
+		"en": {
+			"title": "Work done",
+			"projects": [
+				{
+					"id": "fitness",
+					"date": "2018",
+					"name": "Fitness",
+					"description": "Web application for outsourced content generating company for Movistar. Contains backend with custom CMS for content management and game configuration.",
+					"url": "https://mobilecontenido.com/fitness/",
+					"screenshots": false
+				},
+				{
+					"id": "dogs",
+					"date": "2018",
+					"name": "Perritos Amigos",
+					"description": "Web application for outsourced content generating company for Movistar. Contains backend with custom CMS for content management and game configuration.",
+					"url": "http://mobilecontenido.com/dog/",
+					"screenshots": false
+				},
+				{
+					"id": "pxpeu",
+					"date": "2018",
+					"name": "Pxp Euskadi",
+					"description": "Frontend web application for the road safety department of the Basque Government.",
+					"url": "https://www.pxpeuskadi.eus/site/",
+					"screenshots": false
+				},
+				{
+					"id": "bda",
+					"date": "2022",
+					"name": "Bien de Acá",
+					"description": "Web application developed for UDELAR (University of the Republic), promoting the defense of Uruguayan heritage. It contains a user interface where a registered user can add records, images, audio and videos and another administrator interface.",
+					"url": "https://biendeaca.com.uy/",
+					"screenshots": false
+				},
+				{
+					"id": "angelina",
+					"date": "2021",
+					"name": "Angelina",
+					"description": "Web backend application to draw 1 car 0 km for a company in the food sector.",
+					"url": "",
+					"screenshots": true,
+					"images": [
+						"/public/screenshots/angelina/0-acceso-admin.png",
+						"/public/screenshots/angelina/0-home.png",
+						"/public/screenshots/angelina/1-home-admin.png",
+						"/public/screenshots/angelina/1-registro-usuario.png",
+						"/public/screenshots/angelina/2-codesxuser-admin.png",
+						"/public/screenshots/angelina/2-email-validacion.png",
+						"/public/screenshots/angelina/3-home-usuario.png",
+						"/public/screenshots/angelina/3-reportes-admin.png",
+						"/public/screenshots/angelina/4-perfil-usuario.png"
+					]
+				},
+				{
+					"id": "torrevieja",
+					"date": "2021",
+					"name": "Sal Torrevieja",
+					"description": "Frontend and backend development for a local company that produces industrial salts. Includes backend with custom CMS that allows you to upload, delete images, as well as add, edit and delete products",
+					"url": "https://www.torrevieja.com.uy/",
+					"screenshots": false
+				},
+				{
+					"id": "konigpromos",
+					"date": "2022",
+					"name": "Konig Promos",
+					"description": "Backend web application for veterinary laboratory. Promotion for clients. The company raffles off gifts for its clients based on their sales.",
+					"url": "",
+					"screenshots": true,
+					"images": [
+						"/public/screenshots/konigpromos/0-dashboard-admin.png",
+						"/public/screenshots/konigpromos/1-ventas-admin.png"
+					]
+				},
+				{
+					"id": "castrol",
+					"date": "2023",
+					"name": "Castrol",
+					"description": "Backend web application to manage giveaways for Castrol products at gas stations throughout the country.",
+					"url": "https://newscastrol.com/castrolaxion/",
+					"screenshots": true,
+					"images": [
+						"/public/screenshots/castrol/0-admin-home.png",
+						"/public/screenshots/castrol/1-admin-sorteos-list.png",
+						"/public/screenshots/castrol/2-admin-sorteos-fin.png"
+					]
+				}
+			]
+		}
+	},
+	"inspiredBy": {
+		"es": "Inspirado por la version minimalista del portfolio de Bartosz Jarocki",
+		"en": "Inspired by the minimalist version of Bartosz Jarocki's portfolio"
+	}
+}

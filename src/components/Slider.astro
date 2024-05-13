@@ -1,0 +1,141 @@
+---
+interface Props {
+	images: [];
+}
+const { images } = Astro.props;
+---
+
+<section
+	class="w-full mx-auto max-w-screen-lg md:mt-10 mb-10 overflow-hidden text-white rounded-lg slider"
+	id="slider"
+>
+	{
+		images.map((img) => (
+			<figure class="relative w-full max-h-full aspect-video slider-childs">
+				<img src={img} class="w-full max-h-full block object-cover" />
+			</figure>
+		))
+	}
+
+	<button
+		class="slider-prev bg-white/10 rounded-full ml-4"
+		data-button="prev"
+	>
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			width="24"
+			height="24"
+			viewBox="0 0 24 24"
+			style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"
+			class="w-8 h-8 aspect-square md:w-10 md:h-10"
+			><path
+				d="M13.939 4.939 6.879 12l7.06 7.061 2.122-2.122L11.121 12l4.94-4.939z"
+			></path></svg
+		>
+	</button>
+
+	<button
+		class="slider-next bg-white/10 rounded-full mr-4"
+		data-button="next"
+	>
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			width="24"
+			height="24"
+			viewBox="0 0 24 24"
+			style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"
+			class="w-8 h-8 aspect-square md:w-10 md:h-10"
+			><path
+				d="M10.061 19.061 17.121 12l-7.06-7.061-2.122 2.122L12.879 12l-4.94 4.939z"
+			></path></svg
+		>
+	</button>
+</section>
+
+<script is:inline>
+	const slider = document.querySelector("#slider");
+	const childsSlider = [...slider.querySelectorAll("figure")];
+	const nextButton = document.querySelector("[data-button='next']");
+	const prevButton = document.querySelector("[data-button='prev']");
+	const lengthImages = childsSlider.length;
+	const autoDisplay = true;
+	const interval = 5000;
+	var sliderInterval;
+
+	childsSlider.forEach(function (child, index) {
+		child.dataset.idSlider = index;
+	});
+
+	childsSlider[0].setAttribute("data-active", "0");
+
+	if (autoDisplay === true) {
+		const figures = document.querySelector("figure");
+		start();
+		figures.addEventListener("mouseover", function () {
+			stop();
+		});
+		figures.addEventListener("mouseout", function () {
+			start();
+		});
+	}
+
+	function start() {
+		sliderInterval = setInterval(getNextImage, interval);
+	}
+
+	function stop() {
+		clearInterval(sliderInterval);
+	}
+
+	nextButton.addEventListener("click", function (e) {
+		getNextImage();
+	});
+
+	prevButton.addEventListener("click", function (e) {
+		const currentImage = getCurrentImage();
+		let currentActiveIndex = currentImage.dataset.idSlider;
+		currentActiveIndex--;
+
+		if (currentActiveIndex < 0) {
+			currentActiveIndex = lengthImages - 1;
+		}
+
+		const newActiveElement = childsSlider[currentActiveIndex];
+
+		removeActiveElement();
+		addNewActiveElement(newActiveElement);
+	});
+
+	function getNextImage() {
+		const currentImage = getCurrentImage();
+		let currentActiveIndex = currentImage.dataset.idSlider;
+		currentActiveIndex++;
+
+		if (currentActiveIndex >= lengthImages) {
+			currentActiveIndex = 0;
+		}
+
+		const newActiveElement = childsSlider[currentActiveIndex];
+
+		removeActiveElement();
+		addNewActiveElement(newActiveElement);
+	}
+
+	// obtener el elemento activo
+	function getCurrentImage() {
+		const currentImage = slider.querySelector("[data-active]");
+
+		return currentImage;
+	}
+
+	// eliminar el elemento actual con data active
+	function removeActiveElement() {
+		const currentImage = getCurrentImage();
+		currentImage.removeAttribute("data-active");
+	}
+
+	// Agregar dataactive a un elemento
+	function addNewActiveElement(element) {
+		element.setAttribute("data-active", "");
+	}
+</script>

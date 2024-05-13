@@ -1,0 +1,16 @@
+---
+import { skills } from "../resume.json";
+---
+
+<div class="w-full mt-3 mb-5 text-xs text-white flex justify-around">
+	{
+		skills.map((skill) => (
+			<span class="bg-neutral-700 p-1 mx-1 text-center rounded-lg hover:bg-neutral-700/80 hover:font-bold no-print">
+				{skill}
+			</span>
+		))
+	}
+	<p class="my-2 text-center print">
+		{skills.join(" - ")}
+	</p>
+</div>

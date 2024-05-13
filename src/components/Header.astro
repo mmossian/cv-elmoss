@@ -1,0 +1,21 @@
+---
+interface Props {
+	locale: string;
+}
+import ThemeIcon from "../components/icons/ThemeIcon.astro";
+const { locale } = Astro.props;
+---
+
+<div class="w-full no-print">
+	<span class="inline-block mx-2"><ThemeIcon /></span>
+	<a
+		href="/en"
+		class=`inline-block float-right mx-2 ${locale === 'en' ? 'underline font-bold' : ''}`
+		>EN</a
+	>
+	<a
+		href="/"
+		class=`inline-block float-right mx-2 ${locale === 'es' ? 'underline font-bold' : ''}`
+		>ES</a
+	>
+</div>

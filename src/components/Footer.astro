@@ -1,0 +1,13 @@
+---
+interface Props {
+    locale: string;
+}
+import { inspiredBy } from "../resume.json";
+const { locale } = Astro.props;
+---
+
+<section class="mb-10 text-xs italic text-center">
+    <a class="p-2 underline" href="https://cv.jarocki.me" target="_blank"
+        >{inspiredBy[locale]}</a
+    >
+</section>

@@ -1,0 +1,31 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/Header.astro";
+import Hero from "../../components/Hero.astro";
+import About from "../../components/About.astro";
+import Experience from "../../components/Experience.astro";
+import Footer from "../../components/Footer.astro";
+import Divider from "../../components/Divider.astro";
+const { currentLocale } = Astro;
+---
+
+<Layout title="Portfolio Marcelo Mossian">
+	<main
+		class="h-screen md:w-[80%] lg:w-[65%] xl:w-[50%] mx-auto mb-10 mt-2 p-5"
+	>
+		<Header locale={currentLocale} />
+		<Divider />
+		<div class="w-full mb-10">
+			<Hero locale={currentLocale} />
+		</div>
+		<div class="w-full mb-10">
+			<About locale={currentLocale} />
+		</div>
+		<div class="w-full mb-10">
+			<Experience locale={currentLocale} />
+		</div>
+		<div class="w-full mb-10">
+			<Footer locale={currentLocale} />
+		</div>
+	</main>
+</Layout>

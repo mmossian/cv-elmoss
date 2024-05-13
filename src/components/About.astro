@@ -1,0 +1,15 @@
+---
+interface Props {
+    locale: string;
+}
+import Title from "./Title.astro";
+import { about } from "../resume.json";
+const { locale } = Astro.props;
+---
+
+<Title title={about[locale].title} />
+<section class="p-2 text-sm flex flex-wrap md:flex-nowrap">
+    <p class="p-2">
+        {about[locale].summary}
+    </p>
+</section>
