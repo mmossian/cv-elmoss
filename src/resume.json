@@ -116,15 +116,15 @@
 					"url": "",
 					"screenshots": true,
 					"images": [
-						"/public/screenshots/angelina/0-acceso-admin.png",
-						"/public/screenshots/angelina/0-home.png",
-						"/public/screenshots/angelina/1-home-admin.png",
-						"/public/screenshots/angelina/1-registro-usuario.png",
-						"/public/screenshots/angelina/2-codesxuser-admin.png",
-						"/public/screenshots/angelina/2-email-validacion.png",
-						"/public/screenshots/angelina/3-home-usuario.png",
-						"/public/screenshots/angelina/3-reportes-admin.png",
-						"/public/screenshots/angelina/4-perfil-usuario.png"
+						"/screenshots/angelina/0-acceso-admin.png",
+						"/screenshots/angelina/0-home.png",
+						"/screenshots/angelina/1-home-admin.png",
+						"/screenshots/angelina/1-registro-usuario.png",
+						"/screenshots/angelina/2-codesxuser-admin.png",
+						"/screenshots/angelina/2-email-validacion.png",
+						"/screenshots/angelina/3-home-usuario.png",
+						"/screenshots/angelina/3-reportes-admin.png",
+						"/screenshots/angelina/4-perfil-usuario.png"
 					]
 				},
 				{
@@ -143,8 +143,8 @@
 					"url": "",
 					"screenshots": true,
 					"images": [
-						"/public/screenshots/konigpromos/0-dashboard-admin.png",
-						"/public/screenshots/konigpromos/1-ventas-admin.png"
+						"/screenshots/konigpromos/0-dashboard-admin.png",
+						"/screenshots/konigpromos/1-ventas-admin.png"
 					]
 				},
 				{
@@ -155,9 +155,9 @@
 					"url": "https://newscastrol.com/castrolaxion/",
 					"screenshots": true,
 					"images": [
-						"/public/screenshots/castrol/0-admin-home.png",
-						"/public/screenshots/castrol/1-admin-sorteos-list.png",
-						"/public/screenshots/castrol/2-admin-sorteos-fin.png"
+						"/screenshots/castrol/0-admin-home.png",
+						"/screenshots/castrol/1-admin-sorteos-list.png",
+						"/screenshots/castrol/2-admin-sorteos-fin.png"
 					]
 				}
 			]
@@ -205,15 +205,15 @@
 					"url": "",
 					"screenshots": true,
 					"images": [
-						"/public/screenshots/angelina/0-acceso-admin.png",
-						"/public/screenshots/angelina/0-home.png",
-						"/public/screenshots/angelina/1-home-admin.png",
-						"/public/screenshots/angelina/1-registro-usuario.png",
-						"/public/screenshots/angelina/2-codesxuser-admin.png",
-						"/public/screenshots/angelina/2-email-validacion.png",
-						"/public/screenshots/angelina/3-home-usuario.png",
-						"/public/screenshots/angelina/3-reportes-admin.png",
-						"/public/screenshots/angelina/4-perfil-usuario.png"
+						"/screenshots/angelina/0-acceso-admin.png",
+						"/screenshots/angelina/0-home.png",
+						"/screenshots/angelina/1-home-admin.png",
+						"/screenshots/angelina/1-registro-usuario.png",
+						"/screenshots/angelina/2-codesxuser-admin.png",
+						"/screenshots/angelina/2-email-validacion.png",
+						"/screenshots/angelina/3-home-usuario.png",
+						"/screenshots/angelina/3-reportes-admin.png",
+						"/screenshots/angelina/4-perfil-usuario.png"
 					]
 				},
 				{
@@ -232,8 +232,8 @@
 					"url": "",
 					"screenshots": true,
 					"images": [
-						"/public/screenshots/konigpromos/0-dashboard-admin.png",
-						"/public/screenshots/konigpromos/1-ventas-admin.png"
+						"/screenshots/konigpromos/0-dashboard-admin.png",
+						"/screenshots/konigpromos/1-ventas-admin.png"
 					]
 				},
 				{
@@ -244,9 +244,9 @@
 					"url": "https://newscastrol.com/castrolaxion/",
 					"screenshots": true,
 					"images": [
-						"/public/screenshots/castrol/0-admin-home.png",
-						"/public/screenshots/castrol/1-admin-sorteos-list.png",
-						"/public/screenshots/castrol/2-admin-sorteos-fin.png"
+						"/screenshots/castrol/0-admin-home.png",
+						"/screenshots/castrol/1-admin-sorteos-list.png",
+						"/screenshots/castrol/2-admin-sorteos-fin.png"
 					]
 				}
 			]
