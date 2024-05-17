@@ -9,7 +9,7 @@ const { locale } = Astro.props;
 <h1 class="text-2xl font-semibold mt-5 ml-3">
     {basics[locale].name}
 </h1>
-<section class="p-2 flex flex-wrap md:flex-nowrap">
+<section class="p-2 flex flex-nowrap">
     <div class="md:flex-grow text-sm">
         <p class="leading-6 p-2">
             &bull; {basics[locale].label}
@@ -47,10 +47,10 @@ const { locale } = Astro.props;
         </div>
         <p class="leading-6 p-2 flex flex-nowrap print">&bull; https://6643a764be2c161db1c4c8ce--cv-elmoss.netlify.app/</p>
     </div>
-    <div class="px-2 flex-shrink-0 flex flex-col w-32 h-32 xs:float-right">
+    <div class="px-2 flex-shrink-0 flex flex-col mt-5 md:mt-0">
         <img
             src={basics[locale].image}
-            class="rounded-lg mx-auto"
+            class="rounded-lg w-32 h-32 float-right"
             alt={basics[locale].name}
         />
     </div>
